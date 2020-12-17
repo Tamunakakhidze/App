@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/signUpEmailEditText"
+            android:id="@+id/submitEmailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
@@ -27,7 +27,7 @@
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/signUpPasswordEditText"
+            android:id="@+id/submitPasswordEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"

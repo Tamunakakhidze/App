@@ -10,8 +10,8 @@ import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var signUpEmailEditText: EditText
-    private lateinit var signUpPasswordEditText: EditText
+    private lateinit var submitEmailEditText: EditText
+    private lateinit var submitPasswordEditText: EditText
     private lateinit var submitButton: Button
     private lateinit var mAuth: FirebaseAuth
 
@@ -22,14 +22,14 @@ class MainActivity : AppCompatActivity() {
 
         mAuth = FirebaseAuth.getInstance()
 
-        signUpEmailEditText = findViewById(R.id.signUpEmailEditText)
-        signUpPasswordEditText = findViewById(R.id.signUpPasswordEditText)
+        submitEmailEditText = findViewById(R.id.submitEmailEditText)
+        submitPasswordEditText = findViewById(R.id.submitPasswordEditText)
         submitButton = findViewById(R.id.submitButton)
 
 
         submitButton.setOnClickListener {
-            val email = signUpEmailEditText.text.toString()
-            val password = signUpPasswordEditText.text.toString()
+            val email = submitEmailEditText.text.toString()
+            val password = submitPasswordEditText.text.toString()
 
             if (email.isEmpty() || password.isEmpty()){
                 Toast.makeText(this, "Empty", Toast.LENGTH_SHORT).show()
